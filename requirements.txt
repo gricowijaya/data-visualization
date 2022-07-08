@@ -2,3 +2,5 @@ pandas
 matplotlib
 requests
 markdown
+numpy
+pathlib
