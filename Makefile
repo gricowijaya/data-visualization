@@ -1,4 +1,4 @@
-init:
+init: requirements.txt
 	pip install -r requirements.txt
 
 main:
