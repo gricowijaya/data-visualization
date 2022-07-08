@@ -5,11 +5,23 @@ import sys
 
 
 def main():
-    # func.write_woman_fashions_data(url.womanFashions)
-    # func.write_man_fashions_data(url.manFashions)
-    func.read_woman_fashions_data()
-    func.read_man_fashions_data()
-    # func.create_table()
+    try:
+        # write Man Fashion Category Data
+        func.get_data_and_write(url.man_fashions)
+        # write Woman Fashion Category Data
+        func.get_data_and_write(url.woman_fashions)
+        # write Electronic Category Data
+        func.get_data_and_write(url.electronics)
+
+        # Try to Filter the Price for the Man Fashions
+        func.filter_data_by_price(url.man_fashions, 4000, 5000)
+        # Try to Filter the Price for the Woman Fashions
+        func.filter_data_by_price(url.woman_fashions, 4000, 5000)
+    except:
+        print(f'Error on {sys.exc_info()}')
+    else:
+        print('Done')
+
     pass
 
 
