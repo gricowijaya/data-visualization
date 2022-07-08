@@ -1,7 +1,7 @@
 init: requirements.txt
 	pip install -r requirements.txt
 
-main:
+run:
 	python main.py
 
 clean:
