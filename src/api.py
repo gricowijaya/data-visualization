@@ -1,0 +1,1 @@
+womanFashions = 'http://ml.cakeplabs.com:1891/woman-fashions'
