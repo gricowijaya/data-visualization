@@ -1,6 +1,9 @@
 init: requirements.txt
 	pip install -r requirements.txt
 
+purge: requirements.txt
+	pip uninstall -r requirements.txt
+
 run:
 	python main.py
 
@@ -9,3 +12,12 @@ testing:
 
 clean:
 	rm -rf ./src/__pycache__
+
+data-woman: 
+	jupyter lab ./resource/csv/woman-fashions.csv
+
+data-man: 
+	jupyter lab ./resource/csv/man-fashions.csv
+
+data-electronics: 
+	jupyter lab ./resource/csv/electronics.csv
