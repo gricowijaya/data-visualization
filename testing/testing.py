@@ -16,5 +16,5 @@ def testing():
     pass
 
 
-if __name__ == '__testing__':
+if __name__m == '__testing__':
     sys.exit(testing())
