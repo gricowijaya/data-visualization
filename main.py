@@ -7,16 +7,16 @@ import sys
 def main():
     try:
         # write Man Fashion Category Data
-        func.get_data_and_write(url.man_fashions)
-        # write Woman Fashion Category Data
-        func.get_data_and_write(url.woman_fashions)
-        # write Electronic Category Data
-        func.get_data_and_write(url.electronics)
-
+        # func.get_data_and_write(url.man_fashions)
+        # # write Woman Fashion Category Data
+        # func.get_data_and_write(url.woman_fashions)
+        # # write Electronic Category Data
+        # func.get_data_and_write(url.electronics)
         # Try to Filter the Price for the Man Fashions
-        func.filter_data_by_price(url.man_fashions, 4000, 5000)
+        # func.create_graph(url.man_fashions, 4000, 5000)
         # Try to Filter the Price for the Woman Fashions
-        func.filter_data_by_price(url.woman_fashions, 4000, 5000)
+        func.create_graph(url.woman_fashions, 4000, 5000)
+        # func.elbow_range(url.woman_fashions)
     except:
         print(f'Error on {sys.exc_info()}')
     else:
