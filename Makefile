@@ -14,7 +14,7 @@ clean:
 	rm -rf ./src/__pycache__
 
 data-woman: 
-	jupyter lab ./resource/csv/woman-fashions.csv
+	jupyter notebook ./Woman.ipynb
 
 data-man: 
 	jupyter lab ./resource/csv/man-fashions.csv
