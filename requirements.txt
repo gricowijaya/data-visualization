@@ -5,3 +5,6 @@ markdown
 numpy
 pathlib
 sklearn
+seaborn
+yellowbrick
+
