@@ -9,7 +9,22 @@ import json
 import requests as req
 import numpy as np
 import sys
+import csv
 
+def read_csv(filename):
+    with open(filename, 'r') as f:
+        # read the csv file into a list of lists
+        lines = csv.reader(f, delimiter=',')
+        return list(lines[1:]) # remove header row
+
+def clean_data(filename):
+    data = read_csv(filename)
+
+    # use lambda function to check if the column contain null data
+    data = list(filter(lambda x: x[0] != '' and x[1] != '' and x[2] != '' and x[3] != '' and x[4] != '', data))
+
+    # CHECK the movie rating is within range
+    data = list(filter(lambda x: 0 <= x[2] <= 50000, data))
 
 def get_data_and_write(url):
 
