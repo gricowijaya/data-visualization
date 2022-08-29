@@ -48,3 +48,8 @@ https://www.geeksforgeeks.org/k-means-clustering-introduction/
 kj
 https://www.cdata.com/kb/tech/mysql-python-pandas.rst
 https://www.youtube.com/watch?v=QhhQE9FmC14
+
+## Create the Parameter List to Create the Classification Data.
+
+We can try to get the Parameter List first what to Classificate.  
+
