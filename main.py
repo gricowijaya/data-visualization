@@ -9,8 +9,9 @@ def main():
     try:
         # func.get_data_and_write(url.woman_fashions)
         # km.create_data()
-        # km.dummy_data()
-        knn.run()
+        km.dummy_data()
+        # km.create_data()
+        # knn.run()
     except:
         print(f'Error on {sys.exc_info()}')
     else:
